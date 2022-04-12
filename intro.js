@@ -7,7 +7,11 @@ podio.push("Daniel")
 console.log(podio)
 positions(podio, 0,0)
 podio.splice(podio.indexOf("lastPlace"), 1);
+if(podio.includes == "Daniel"){
+    console.log(podio.includes("Daniel"));
+}
 console.log(podio)
 console.log("1ª - Colocado: " + podio[0] );
 console.log("2ª - Colocado: " + podio[1] );
 console.log("3ª - Colocado: " + podio[2] );
+console.log(podio.includes("Daniel"))
