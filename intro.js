@@ -1,17 +1,18 @@
 function positions(firstPlace, secondPlace, lastPlace){
-    podio.splice(lastPlace,0, podio.splice(firstPlace,1)[0]);
-    return podio
+
+    let podio = [firstPlace, secondPlace, lastPlace]
+    
+    if(lastPlace == "Daniel"){
+        podio.reverse();
+        console.log("Primeiro Colocado: ", podio[0])
+        console.log("Segundo Colocado: ", podio[1])
+        console.log("Terceiro Colocado: ", podio[2])
+}   if (secondPlace =="Daniel"){
+        console.log("Primeiro Colocado: ", podio[1])
+        console.log("Segundo Colocado: ", podio[0])
+        console.log("Terceiro Colocado: ", podio[2])
 }
-let podio =["firstPlace", "secondPlace", "lastPlace"]
-podio.push("Daniel")
-console.log(podio)
-positions(podio, 0,0)
-podio.splice(podio.indexOf("lastPlace"), 1);
-if(podio.includes == "Daniel"){
-    console.log(podio.includes("Daniel"));
+
 }
-console.log(podio)
-console.log("1ª - Colocado: " + podio[0] );
-console.log("2ª - Colocado: " + podio[1] );
-console.log("3ª - Colocado: " + podio[2] );
-console.log(podio.includes("Daniel"))
+
+positions ("Alfredo", "Daniel","Godofredo" )
